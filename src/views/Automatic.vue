@@ -15,7 +15,7 @@ import { ref, computed } from "vue";
 //   [arrayElement, ...restArrayElement],
 //   ...rest
 // ) => {
-//   console.log("externalArrowFunction called");
+//   console.log("externalArrowFunctionWithParameters called");
 
 //   // [TEST] normally execute with an inner arrow function
 //   const innerFunction = () => {
@@ -36,7 +36,7 @@ import { ref, computed } from "vue";
 //   [arrayElement, ...restArrayElement],
 //   ...rest
 // ) {
-//   console.log("normalFunction called");
+//   console.log("externalNormalFunctionWithParameters called");
 
 //   // [TEST] normally execute with an inner normal function
 //   function innerFunction() {
@@ -46,7 +46,7 @@ import { ref, computed } from "vue";
 
 // [TEST] normally execute with a normal function without parameters
 // function externalNormalFunctionWithoutParameters() {
-//   console.log("normalFunction called");
+//   console.log("externalNormalFunctionWithoutParameters called");
 // };
 
 /* ------------------------------------------------------------ */
@@ -98,7 +98,7 @@ import { ref, computed } from "vue";
 
 // [TEST] normally not execute with an IIFE even though it has a name and a body
 // (function iifeFunction() {
-
+//   console.log("iifeFunction called");
 // })();
 
 // [TEST] normally not execute with an object
