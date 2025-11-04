@@ -79,20 +79,6 @@ export const useBanner = () => {
     method4: function name() {
       console.log("method4 called");
     },
-    nested: {
-      method1() {
-        console.log("method1 called");
-      },
-      method2: () => {
-        console.log("method2 called");
-      },
-      method3: function () {
-        console.log("method3 called");
-      },
-      method4: function name() {
-        console.log("method4 called");
-      },
-    },
   };
 
   // [TEST] normally execute with a class method
